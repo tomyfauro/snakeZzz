@@ -1,0 +1,102 @@
+* {
+  font-family: "Share Tech Mono", monospace;
+}
+.container {
+  min-width: 100%;
+}
+#centrar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+}
+
+body {
+  background-image: url(/wallpeper.jpg);
+  text-align: center;
+  overflow: hidden;
+}
+
+#board,
+.boardInfo {
+  max-width: 500px;
+}
+
+#start,
+.boardInfo {
+  font-size: 25px;
+}
+
+#toaster {
+  background-color: white;
+  padding: 5px;
+  border-radius: 12px;
+  width: 140px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(1000px);
+  transition: transform 0.5s;
+  z-index: 9999;
+}
+
+#toaster p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#board {
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+#gameOver {
+  display: none;
+}
+
+.boardInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#start {
+  background-color: #f35a69;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+#scoreBoard {
+  display: inline-flex;
+}
+
+#scorecolor {
+  color: #f35a5a;
+}
+
+.square {
+  aspect-ratio: 1;
+}
+
+.emptySquare {
+  background-color: #456990;
+}
+
+.snakeSquare {
+  background-color: #ccf47f;
+  border: 0.1px solid #000;
+}
+
+.foodSquare {
+  background-color: #f35a5a;
+  border: 1px solid#000;
+}
