@@ -1,9 +1,11 @@
 * {
   font-family: "Share Tech Mono", monospace;
 }
+
 .container {
   min-width: 100%;
 }
+
 #centrar {
   align-items: center;
   display: flex;
@@ -58,7 +60,9 @@ body {
   width: 500px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  background: #456990;
 }
+
 #gameOver {
   display: none;
 }
@@ -92,11 +96,15 @@ body {
 }
 
 .snakeSquare {
-  background-color: #ccf47f;
-  border: 0.1px solid #000;
+  background-color: #25611e;
 }
 
 .foodSquare {
   background-color: #f35a5a;
-  border: 1px solid#000;
+  border-radius: 50%;
+}
+
+
+.square.snakeSquare {
+  position: relative;
 }
